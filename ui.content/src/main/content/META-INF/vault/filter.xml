@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/gql-demo" mode="merge"/>
+    <filter root="/content/gql-demo" mode="merge"/>
+    <filter root="/content/dam/gql-demo/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/gql-demo" mode="merge"/>
+</workspaceFilter>

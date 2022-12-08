@@ -1,0 +1,38 @@
+{
+    "allowedpaths": [
+        "/content/graphql/aem-demo-assets/endpoint.json",
+        "/content/cq:graphql/aem-demo-assets/endpoint.json",
+        "/content/_cq_graphql/aem-demo-assets/endpoint.json",
+        "/graphql/execute.json/.*",
+        "/content/.*",
+        ".*"
+    ],
+    "alloworigin": [
+        "https://lamontacrook.github.io"
+    ],
+    "alloworiginregexp": [
+        "https://*.github.io",
+        "http://localhost:.*",
+        "http://localhost:3000",
+        "https://*.appspot.com"
+    ],
+    "exposedheaders": [
+        ""
+    ],
+    "maxage": 1800,
+    "supportedheaders": [
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers",
+        "authorization"
+    ],
+    "supportedmethods": [
+        "GET",
+        "HEAD",
+        "POST"
+    ],
+    "supportscredentials": true
+}
