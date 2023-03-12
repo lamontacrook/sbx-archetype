@@ -8,7 +8,9 @@
         ".*"
     ],
     "alloworigin": [
-        "https://lamontacrook.github.io"
+        "https://lamontacrook.github.io",
+        "https://main--rl-content-site--lamontacrook.hlx.page",
+        "https://main--rl-content-site--lamontacrook.hlx.live"
     ],
     "alloworiginregexp": [
         "https://*.github.io",
