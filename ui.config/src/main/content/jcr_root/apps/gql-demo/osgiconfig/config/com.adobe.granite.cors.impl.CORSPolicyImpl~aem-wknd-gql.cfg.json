@@ -7,18 +7,10 @@
         "/content/.*",
         ".*"
     ],
-    "alloworigin": [
-        "https://lamontacrook.github.io",
-        "https://main--rl-content-site--lamontacrook.hlx.page",
-        "https://main--rl-content-site--lamontacrook.hlx.live"
-    ],
+    "alloworigin": [],
     "alloworiginregexp": [
-        "https://*.github.io",
-        "http://localhost:.*",
-        "http://localhost:3000",
-        "https://*.appspot.com",
-        "https://*.hlx.page",
-        "https://*.hlx.live"
+        "https://.*\\.hlx\\.page",
+        "https://.*\\.hlx\\.live"
     ],
     "exposedheaders": [
         ""
