@@ -10,7 +10,8 @@
     "alloworigin": [],
     "alloworiginregexp": [
         "https://.*\\.hlx\\.page",
-        "https://.*\\.hlx\\.live"
+        "https://.*\\.hlx\\.live",
+        "https://localhost:.*"
     ],
     "exposedheaders": [
         ""
