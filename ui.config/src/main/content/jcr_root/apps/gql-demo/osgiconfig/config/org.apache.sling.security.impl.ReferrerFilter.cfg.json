@@ -3,7 +3,7 @@
   "allow.hosts":[
     "lamontacrook.github.io",
     "aem-pure-headless.vercel.app",
-    "https://main--xsc-franklin-demo--lamontacrook.hlx.page"
+    "main--xsc-franklin-demo--lamontacrook.hlx.page"
   ],
   "allow.hosts.regexp":[
     "https://.*\\.github\\.io:443",
