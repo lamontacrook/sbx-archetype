@@ -25,7 +25,7 @@ Include conf.d/variables/custom.vars
 
 		# Set CORS headers to allow XHR
 		# Determine if Origin matches the regex
-		SetEnvIf Origin "http(s)?://(.*\.adobeaemcloud\.com|.*\.github\.io|localhost:3000)$" AccessControlAllowOrigin=$0
+		SetEnvIf Origin "http(s)?://(.*\.adobeaemcloud\.com|.*\.github\.io|localhost:3000|.*\.hlx\.page)$" AccessControlAllowOrigin=$0
 		# Set Access-Control-Allow-Origin if the Origin is allowd
 		Header merge Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
 
