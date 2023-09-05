@@ -59,9 +59,9 @@ Include conf.d/variables/custom.vars
         # Developer CodePen.io app
         SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://cdpn\.io$)#" CORSTrusted=true
 				# Developer Frankin Preview
-        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://hlx\.page$)#" CORSTrusted=true
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
 				# Developer Franklin Live
-        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://hlx\.live$)#" CORSTrusted=true
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 
         ################## END EDITABLE SECTION
 
