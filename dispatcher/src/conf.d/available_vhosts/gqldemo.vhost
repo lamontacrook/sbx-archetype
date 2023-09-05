@@ -40,6 +40,9 @@ Include conf.d/variables/custom.vars
         SetEnvIfExpr "req_novary('Access-Control-Request-Method') != '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''" CORSType=preflight CORSProcessing=true CORSTrusted=false
         SetEnvIfExpr "req_novary('Origin') -strcmatch '%{REQUEST_SCHEME}://%{HTTP_HOST}*'" CORSType=samedomain CORSProcessing=false
 
+        Header always set AEM-CORS-Processing "true" "expr=reqenv('CORSProcessing') == 'true'"
+        Header always set AEM-CORS-Type "samedomain" "expr=reqenv('CORSType') == 'samedomain'"
+
         # For requests that require CORS processing, check if the Origin can be trusted
         SetEnvIfExpr "%{HTTP_HOST} =~ /(.*)/ " ParsedHost=$1
 
