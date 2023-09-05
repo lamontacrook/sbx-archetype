@@ -18,7 +18,8 @@ Include conf.d/variables/custom.vars
 	AllowEncodedSlashes NoDecode
 	# Add header breadcrumbs for help in troubleshooting
 	<IfModule mod_headers.c>
-		Header add X-Vhost "publish"
+		Header add X-Vhost "publish2"
+        Header always set AEM "lamont"
 
         ################## Start of CORS configuration ##################
 
