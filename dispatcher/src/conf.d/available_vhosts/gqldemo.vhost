@@ -164,7 +164,7 @@ Include conf.d/variables/custom.vars
         Header set Age 0
     </LocationMatch>
     # GQL Enable
-    <LocationMatch "^/graphql/execute\.json/.*$">
+    <LocationMatch "^/graphql/execute\.json/.*">
         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
         Header set Age 0
