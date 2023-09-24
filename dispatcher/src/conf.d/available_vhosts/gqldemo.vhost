@@ -52,10 +52,14 @@ Include conf.d/variables/custom.vars
         ################## The following provide access from common developer platforms, to accelerate AEM Headless access to WKND content.
         # Developer Localhost
         SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+         # Developer Localhost
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://localhost(:\d+)?$)#" CORSTrusted=true
         # Adobe AppBuilder
         SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://experience\.adobe\.com$)#" CORSTrusted=true          
         # Developer Vercel app
         SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.vercel\.app$)#" CORSTrusted=true
+        # Developer Netifly app
+        SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.netlify\.app$)#" CORSTrusted=true
         # Developer Github.io app
         SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.github\.io$)#" CORSTrusted=true
         # Developer Codesandbox.io app

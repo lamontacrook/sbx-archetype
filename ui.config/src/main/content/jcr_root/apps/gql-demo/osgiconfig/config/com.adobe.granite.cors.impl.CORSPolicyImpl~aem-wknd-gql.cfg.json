@@ -4,14 +4,14 @@
         "/content/cq:graphql/aem-demo-assets/endpoint.json",
         "/content/_cq_graphql/aem-demo-assets/endpoint.json",
         "/graphql/execute.json/.*",
-        "/content/.*",
-        ".*"
+        "/content/.*"
     ],
     "alloworigin": [],
     "alloworiginregexp": [
         "https://.*\\.hlx\\.page",
         "https://.*\\.hlx\\.live",
-        "https://localhost:.*"
+        "https://localhost:.*",
+        "https://.*\\.netlify\\.app"
     ],
     "exposedheaders": [
         ""

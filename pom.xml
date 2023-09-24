@@ -35,7 +35,7 @@
             
     <module>core</module>
             
-    <module>ui.frontend</module>
+    <!-- <module>ui.frontend</module> -->
              
     <module>ui.apps</module>
             
@@ -43,8 +43,8 @@
             
     <module>ui.config</module>
             
-    <module>ui.content</module>
-            
+    <!-- <module>ui.content</module>
+             -->
     <module>it.tests</module>
             
     <module>dispatcher</module>
