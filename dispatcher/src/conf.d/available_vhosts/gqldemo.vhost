@@ -29,12 +29,14 @@ Include conf.d/variables/custom.vars
 		# Set Access-Control-Allow-Origin if the Origin is allowd
 		Header merge Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
 
-		#	Header set Access-Control-Allow-Headers "Origin, Authorization, Accept, Content-Type"
+		# Header set Access-Control-Allow-Headers "Origin, Authorization, Accept, Content-Type"
 		Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
 		Header set Access-Control-Max-Age "1801"
 		Header set Access-Control-Expose-Headers "Content-Security-Policy, Location"
 		Header merge Vary Origin
 
+		# Cache CORS preflights OPTIONS at 300 (5 mins)
+		Header always set Cache-Control "s-maxage=300, max-age=300" "expr=%{REQUEST_METHOD} == 'OPTIONS'"
 
 		# Answer pre-flight requests with a 204 No Content
 		# https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request
