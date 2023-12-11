@@ -1,10 +1,12 @@
 {
   "allow.empty":false,
   "allow.hosts":[
-    "lamontacrook.github.io"
+    "lamontacrook.github.io",
+    "aem-pure-headless.vercel.app",
+    "main--xsc-franklin-demo--lamontacrook.hlx.page"
   ],
   "allow.hosts.regexp":[
-    "https://reusr1\\.github\\.io:443",
+    "https://.*\\.github\\.io:443",
     "https://.*\\.adobe\\.com:443",
     "https://.*\\.adobe\\.net:443",
     "https://.*\\.workfront\\.com:443",

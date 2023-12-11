@@ -65,12 +65,12 @@
                             <artifactId>gqldemo.core</artifactId>
                             <target>/apps/gql-demo-packages/application/install</target>
                         </embedded>
-                        <embedded>
+                        <!-- <embedded>
                             <groupId>com.adobe.gqldemo</groupId>
                             <artifactId>gqldemo.ui.content</artifactId>
                             <type>zip</type>
                             <target>/apps/gql-demo-packages/content/install</target>
-                        </embedded>
+                        </embedded> -->
                         <embedded>
                             <groupId>com.adobe.gqldemo</groupId>
                             <artifactId>gqldemo.ui.config</artifactId>
@@ -194,12 +194,12 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>com.adobe.gqldemo</groupId>
             <artifactId>gqldemo.ui.content</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>com.adobe.gqldemo</groupId>
             <artifactId>gqldemo.ui.config</artifactId>
