@@ -19,7 +19,7 @@ Include conf.d/variables/custom.vars
 	# Add header breadcrumbs for help in troubleshooting
 	<IfModule mod_headers.c>
 		Header add X-Vhost "publish3"
-        Header always set AEM "lamont"
+        Header always set Debug "Surrogate-Control cache for GQL endpoint"
 
         ################## Start of CORS configuration ##################
 
@@ -176,7 +176,7 @@ Include conf.d/variables/custom.vars
     # GQL Enable
     <LocationMatch "^/graphql/execute\.json/.*">
         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "max-age=1800,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
         Header set Age 0
     </LocationMatch>
     # Core Component Search Component: Cache for 5min with background refresh 1h on browser and 12h on CDN to avoid MISS, also incl. requests with query parameter
