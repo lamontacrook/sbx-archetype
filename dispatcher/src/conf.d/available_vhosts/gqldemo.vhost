@@ -103,7 +103,7 @@ Include conf.d/variables/custom.vars
         # Remove Origin before sending to AEM Publish
         RequestHeader unset Origin
 
-        Header set Cache-Control "s-maxage=60, max-age=60" "expr=-z %{ENV:CORSType} || %{ENV:CORSType} == 'preflight'"
+        Header always set Cache-Control "s-maxage=60, max-age=60" "expr=-z %{ENV:CORSType} || %{ENV:CORSType} == 'preflight'"
 
         ################## End of CORS configuration ##################
 	</IfModule>
