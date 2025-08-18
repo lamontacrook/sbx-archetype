@@ -17,4 +17,5 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/gql-demo-packages"/>
     <filter root="/apps/gql-demo-vendor-packages"/>
+    <filter root="/apps/gql-demo/osgiconfig-cloud"/>
 </workspaceFilter>
